@@ -2,7 +2,8 @@
 subject: My Hero Email Template Subject
 ---
 
-<wrapper class="header">
+<wrapper class="header
+">
     <container>
         <row class="collapse">
             <columns small="1">
@@ -16,28 +17,58 @@ subject: My Hero Email Template Subject
 </wrapper>
 
 <container>
-    <spacer size="16"></spacer>
+    <!-- <spacer size="16"></spacer> -->
 
-    <row>
+    <row class="thumbnail">
         <columns small="12">
             <h2>Hi Reception</h2>
-            <p class="lead"><%=firstName%> <%=lastName%> has requested an appointment.</p>
-            <!-- <img src="http://placehold.it/580x300" alt="" />
-            <callout class="primary">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda, praesentium qui vitae
-                    voluptate dolores. <a href="#">Click it!</a>
-                </p>
-            </callout> -->
-            <row>
-                <columns small="6">
-                    <p>First Name</p>
-                    <p><%=firstName%></p>
-                </columns>
-                <columns small="6">
-                    <h2>Right</h2>
-                </columns>
-            </row>
+            <p class="lead"><%=firstName%> <%=lastName%> requests an appointment.</p>
+                <row>
+                    <columns small="6">
+                        <small>First Name</small>
+                        <h6><%=firstName%></h6>
+                    </columns>
+                    <columns small="6">
+                        <small>Last Name</small>
+                        <h6><%=lastName%></h6>
+                    </columns>
+                </row>
+                <row>
+                    <columns small="6">
+                        <small>Email</small>
+                        <h6><%=email%></h6>
+                    </columns>
+                    <columns small="6">
+                        <small>Mobile</small>
+                        <h6><%=mobile%></h6>
+                    </columns>
+                </row>
+                <row>
+                    <columns small="6">
+                        <small>Team</small>
+                        <h6><%=team%></h6>
+                    </columns>
+                    <columns small="6">
+                        <small>Seniority</small>
+                        <h6><%=seniority%></h6>
+                    </columns>
+                </row>
+                <row>
+                    <columns small="6">
+                        <small>Date & Time</small>
+                        <h6><%=dateTime%></h6>
+                    </columns>
+                    <columns small="6">
+                        <small>First Visit</small>
+                        <h6><%=firstVisit%></h6>
+                    </columns>
+                </row>
+                <row>
+                    <columns small="12">
+                        <small>Request</small>
+                        <h6><%=requestInfo%></h6>
+                    </columns>
+                </row>
             <h2>Title Ipsum <small>This is a note.</small></h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi repellat, harum. Quas nobis id aut,
